@@ -55,9 +55,8 @@
                         </div>
                         <div class="form-group row tituloLabel">
                             <label for="registerCorreo" class="col-md-4 col-form-label text-md-right">Correo Electrónico</label>
-
                             <div class="col-md-6">
-                                <input id="registerCorreo" type="email" class="form-control @error('registerCorreo') is-invalid @enderror" name="registerCorreo" value="{{ old('registerCorreo') }}">
+                                <input id="registerCorreo" type="email" class="form-control @error('registerCorreo') is-invalid @enderror" name="registerCorreo" value="{{ old('registerCorreo') }}" placeholder="Ingrese un correo con formato valido">
 
                                 @error('registerCorreo')
                                     <span class="invalid-feedback" role="alert">
@@ -98,9 +97,8 @@
                         </div>
                         <div class="form-group row tituloLabel">
                             <label for="registerTelefono" class="col-md-4 col-form-label text-md-right">Teléfono</label>
-
                             <div class="col-md-6">
-                                <input id="registerTelefono" type="text" class="form-control @error('registerTelefono') is-invalid @enderror" name="registerTelefono" value="{{ old('registerTelefono') }}">
+                                <input id="registerTelefono" type="text" class="form-control @error('registerTelefono') is-invalid @enderror" name="registerTelefono" value="{{ old('registerTelefono') }}" placeholder="Ej. +593997543714">
 
                                 @error('registerTelefono')
                                     <span class="invalid-feedback" role="alert">
